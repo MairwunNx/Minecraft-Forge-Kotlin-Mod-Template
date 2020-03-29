@@ -27,7 +27,7 @@ git clone --depth=1 https://github.com/MairwunNx/Minecraft-Forge-Kotlin-Mod-Temp
 
 - Gradle **kotlin dsl** buildscript [build.gradle.kts](/build.gradle.kts)
 - Boilerplate code of **forge mdk**
-- Included **kotlin runtime** (JDK 8).
+- Included **kotlin runtime** (JDK 8) in build.
 - **Documentation** for build script.
 - Included some *hacks* for using **forge events** in kotlin classes.
 
