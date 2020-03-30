@@ -1,5 +1,5 @@
 /**
- * Build script for forge 28.X.X and minecraft 1.14.4.
+ * Build script for forge 31.X.X and minecraft 1.15.2.
  *
  * If you have any questions or encounter a problem, be sure to open an issue
  * https://github.com/MairwunNx/Minecraft-Forge-Kotlin-Mod-Template/issues/new/choose
@@ -31,12 +31,12 @@ group = "com.yourname.modid"
 /*
     The version of your mod, please use versions that meet
     the requirements of semver, do not use versions of the
-    type 1.14.4-1.0.0 and the like, the following is a correct
+    type 1.15.2-1.0.0 and the like, the following is a correct
     example of a version that meets the standards of semver.
 
     Read more about it: https://semver.org/
 */
-version = "1.0.0-DEV-SNAPSHOT+MC-1.14.4"
+version = "1.0.0-DEV-SNAPSHOT+MC-1.15.2"
 
 val Project.configureMinecraft
     get() = extensions.getByName<UserDevExtension>("minecraft")
@@ -66,7 +66,7 @@ dependencies {
         And it's patches will be applied. The userdev artifact is
         a special name and will get all sorts of transformations applied to it.
     */
-    minecraft("net.minecraftforge:forge:1.14.4-28.2.0")
+    minecraft("net.minecraftforge:forge:1.15.2-31.1.0")
 
     /*
         Uncomment line below if your project will be register
@@ -150,7 +150,7 @@ configureMinecraft.let {
 tasks.withType<Jar> {
     /*
         Mod archive file name, example, if you set this value
-        `HelloMod` you will see file name as `HelloMod-1.0.0-DEV-SNAPSHOT+MC-1.14.4.jar`.
+        `HelloMod` you will see file name as `HelloMod-1.0.0-DEV-SNAPSHOT+MC-1.15.2.jar`.
      */
     archiveBaseName.set(project.name)
 
@@ -162,7 +162,6 @@ tasks.withType<Jar> {
         configuration.asFileTree.fold(
             files().asFileTree
         ) { collection, file ->
-            println(file.name)
             when {
                 file.isDirectory -> collection
                 else -> collection.plus(zipTree(file))

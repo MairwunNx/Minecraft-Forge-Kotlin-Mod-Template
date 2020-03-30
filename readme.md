@@ -6,8 +6,8 @@
 
 | Minecraft version | Forge version | Gradle version |
 |:--- |:--- |:--- |
-|1.14.4 (this branch) | `28.X.X` | `5.6.4` |
-|[1.15.2](https://github.com/MairwunNx/Minecraft-Forge-Kotlin-Mod-Template/tree/FORGE-1.15.2) | `31.X.X` | `5.6.4` |
+|[1.14.4](https://github.com/MairwunNx/Minecraft-Forge-Kotlin-Mod-Template/tree/FORGE-1.14.4)  | `28.X.X` | `5.6.4` |
+|1.15.2 (this branch) | `31.X.X` | `5.6.4` |
 
 #### Contains 🧐
 
