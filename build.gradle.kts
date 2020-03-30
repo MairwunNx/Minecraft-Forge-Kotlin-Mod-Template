@@ -162,7 +162,6 @@ tasks.withType<Jar> {
         configuration.asFileTree.fold(
             files().asFileTree
         ) { collection, file ->
-            println(file.name)
             when {
                 file.isDirectory -> collection
                 else -> collection.plus(zipTree(file))
